@@ -71,9 +71,94 @@
 
       @media screen and (max-width: 400px) {
         .dark_blue {
-          color: blue;
+          background-color: blue; 
         }
       }
+
+    /* media breakpoints */
+    @media screen and (min-width: 450px){
+      .dark_blue, .orange, .red {
+        width: 100%;
+      }
+      .light_blue, .green {
+        width: 50%;
+      }
+
+    }
+
+    @media screen and (min-width: 550px) {
+      .dark_blue {
+        width: 100%;
+      }
+      .light_blue, .green {
+        width: 50%;
+      }
+      .red {
+        width: 33.3%;
+      }
+      .orange {
+        width: 66.6%;
+      }
+    }
+    
+    @media screen and (min-width: 800px) {
+      .container {
+          width: 800px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        
+      .dark_blue {
+        width: 100%;
+      }
+      .light_blue, .green {
+        width: 50%;
+      }
+      .red {
+        width: 33%;
+      }
+      .orange {
+        width: 67%;
+      }
+    }
+      /* 
+      
+      add 
+      min-width: 450
+      @media screen and (max-width: 450px) {
+        }
+
+      0. blue 100%
+      1. light-blue 50%, green 50%
+      2. red 100%
+      3. orange 100%
+
+      min-width: 550
+      @media screen and (max-width: 550px) {
+        }
+
+      0. blue 100%
+      1. light-blue 50%, green 50%
+      2. red 33%, orange 66%
+
+      min-width: 800
+      @media screen and (max-width: 800px) {
+        .container {
+          width: 700px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+
+      0. blue 100%
+      1. light-blue 50%, green 50%
+      2. red 33%, orange 66%
+      3. Add margins left and right
+        
+
+
+      */
+
     </style>
   </head>
   <body>
